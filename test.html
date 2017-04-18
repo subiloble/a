@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="test.js"></script>
+</head>
+<body onload="init()">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="Name"></td>
+        </tr>
+        <tr>
+            <td>Due:</td>
+            <td><input type="text" id="Due"></td>
+        </tr>
+		<tr>
+            <td>Importance:</td>
+            <td><input type="text" id="Importance"></td>
+        </tr>
+		<tr>
+            <td>Difficulty:</td>
+            <td><input type="text" id="Difficulty"></td>
+        </tr>
+		<tr>
+            <td>Detail:</td>
+            <td><input type="text" id="Detail"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="save" onclick="saveData()"></td>
+            <td><input type="button" value="delete the table" onclick="dropTable()"></td>
+			<td><input type="button" value="hide all data" onclick="hideAllData()"></td>
+			<td><input type="button" value="delete certain row" onclick="deleteData()"></td>
+        </tr>
+    </table>
+<hr>
+<table border="1" id="datatable"></table>
+    <p id="msg"></p>
+</body>
+</html>
